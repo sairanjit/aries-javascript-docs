@@ -184,6 +184,36 @@
     varint "^6.0.0"
     web-did-resolver "^2.0.8"
 
+"@aries-framework/core@0.2.5":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@aries-framework/core/-/core-0.2.5.tgz#085b69519c275e742418545a96534f12283de4de"
+  integrity sha512-UQ5DFSpLrm2TlkFVl8Bufy55RoY+AeP1rOo8Yu7UfU6sjX2qhbqztdVAMocUnwgQny7e7o9p27bL9RItcgAwGA==
+  dependencies:
+    "@multiformats/base-x" "^4.0.1"
+    "@stablelib/ed25519" "^1.0.2"
+    "@stablelib/sha256" "^1.0.1"
+    "@types/indy-sdk" "^1.16.19"
+    "@types/node-fetch" "^2.5.10"
+    "@types/ws" "^7.4.6"
+    abort-controller "^3.0.0"
+    bn.js "^5.2.0"
+    borc "^3.0.0"
+    buffer "^6.0.3"
+    class-transformer "0.5.1"
+    class-validator "0.13.1"
+    did-resolver "^3.1.3"
+    lru_map "^0.4.1"
+    luxon "^1.27.0"
+    make-error "^1.3.6"
+    object-inspect "^1.10.3"
+    query-string "^7.0.1"
+    reflect-metadata "^0.1.13"
+    rxjs "^7.2.0"
+    tsyringe "^4.5.0"
+    uuid "^8.3.2"
+    varint "^6.0.0"
+    web-did-resolver "^2.0.8"
+
 "@aries-framework/node@^0.2.0-alpha.135":
   version "0.2.0-alpha.135"
   resolved "https://registry.yarnpkg.com/@aries-framework/node/-/node-0.2.0-alpha.135.tgz#0b54f2ff31718896494b7d09362ee64293c32496"
@@ -196,6 +226,20 @@
     node-fetch "^2.6.1"
     ref-napi "^3.0.3"
     ws "^7.5.3"
+
+"@aries-framework/react-native@^0.2.0":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@aries-framework/react-native/-/react-native-0.2.5.tgz#0a3bd6a107e87f3fa18003b2f2e453ad252453b2"
+  integrity sha512-h97vQmYg2/U6/MKK8Xtg/nXFDXtGPNla08tSc8tJoOuKY+xu4Wp2Hw2frZYsDFMXVKXmQHeJe7BertYW7b2qGA==
+  dependencies:
+    "@aries-framework/core" "0.2.5"
+    "@azure/core-asynciterator-polyfill" "^1.0.0"
+    events "^3.3.0"
+
+"@azure/core-asynciterator-polyfill@^1.0.0":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@azure/core-asynciterator-polyfill/-/core-asynciterator-polyfill-1.0.2.tgz#0dd3849fb8d97f062a39db0e5cadc9ffaf861fec"
+  integrity sha512-3rkP4LnnlWawl0LZptJOdXNrT/fHp2eQMadoasa6afspXdpGrtPZuAQc2PD0cpgyuoXtUWyC3tv7xfntjGS5Dw==
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.16.0", "@babel/code-frame@^7.16.7", "@babel/code-frame@^7.8.3":
   version "7.16.7"
@@ -1835,9 +1879,9 @@
     "@hapi/hoek" "^9.0.0"
 
 "@sideway/formula@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@sideway/formula/-/formula-3.0.0.tgz#fe158aee32e6bd5de85044be615bc08478a0a13c"
-  integrity sha512-vHe7wZ4NOXVfkoRb8T5otiENVlT7a3IAiw7H5M2+GO+9CDgcVUUsX1zalAztCmwyOr2RUTGJdgB+ZvSVqmdHmg==
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@sideway/formula/-/formula-3.0.1.tgz#80fcbcbaf7ce031e0ef2dd29b1bfc7c3f583611f"
+  integrity sha512-/poHZJJVjx3L+zVD6g9KgHfYnb443oi7wLu/XKojDviHy6HOEOA6z1Trk5aR1dGcmPenJEgb2sK2I80LeS3MIg==
 
 "@sideway/pinpoint@^2.0.0":
   version "2.0.0"
@@ -2164,6 +2208,13 @@
   version "1.16.18"
   resolved "https://registry.yarnpkg.com/@types/indy-sdk/-/indy-sdk-1.16.18.tgz#3bf3d134449607f91259beee6389971bbdb6f963"
   integrity sha512-v1z0FAr/4ex9OEniytB8bYPHSxpbmy8xRjb3xpnla2MF3XB+E2ULnZA4moK5yQ1wO+SFW3QlSd/IwHd9JbfU/Q==
+  dependencies:
+    buffer "^6.0.0"
+
+"@types/indy-sdk@^1.16.19":
+  version "1.16.30"
+  resolved "https://registry.yarnpkg.com/@types/indy-sdk/-/indy-sdk-1.16.30.tgz#2cd6bac5e1ecfc21e47c790494df9437095055f6"
+  integrity sha512-txr2b2k94qbhzZP6I/EbGapeugrfMTmHy/mbV4MfaiFIFj1+wPnJiQD5CyXbNi8ReqtdGAnC8V34PshWoww2ow==
   dependencies:
     buffer "^6.0.0"
 
@@ -4046,7 +4097,7 @@ eventemitter3@^4.0.0:
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
   integrity sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==
 
-events@^3.2.0:
+events@^3.2.0, events@^3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/events/-/events-3.3.0.tgz#31a95ad0a924e2d2c419a813aeb2c4e878ea7400"
   integrity sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q==
